@@ -5,17 +5,21 @@ import time
 while True:
     user_choice = get_user_choice()
     if user_choice == "play":
+        clear_screen()
         print("Let's start the game! 🚀")
         break
     elif user_choice == "info":
+        clear_screen()
         print("Here's how you play the game... ")
         show_info()
     else:
+        clear_screen()
         print("Invalid choice. Please try again. ❌")
 
 # This loop ensures the user inputs a valid number of problems they want to solve.
 on = True
-while on:    
+while on:
+    clear_screen()
     try:
         total_problems = int(input("\nChoose number of problems: "))
     except ValueError:
