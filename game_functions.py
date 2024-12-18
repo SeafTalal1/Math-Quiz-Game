@@ -1,3 +1,4 @@
+import os
 import random
 
 # Ultimate Math Challenge Game
@@ -12,6 +13,11 @@ LEVELS = {
     "medium": {"operators": ["+", "-"], "min_operand": 10, "max_operand": 30},
     "easy": {"operators": ["+"], "min_operand": 0, "max_operand": 20},
     }
+
+
+# Function to clear the screen
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 # Function to generate a random math problem based on difficulty level
